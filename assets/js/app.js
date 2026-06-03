@@ -138,6 +138,9 @@
             });
     }
 
+    // ── Chart Instances ────────────────────────────────────
+    let seoChart = null;
+
     // ── Render Analysis Result ─────────────────────────────
     function renderAnalysisResult(result) {
         const area = document.getElementById('resultArea');
@@ -169,11 +172,47 @@
             '</div>' +
             '</div>' +
             '<div class="scores-grid">' + scoresHtml + '</div>' +
+            '<div style="margin:1rem 0"><canvas id="seoScoreChart" height="200"></canvas></div>' +
             '<div class="suggestions">' +
             '<h4>💡 Suggestions</h4>' +
             '<ul>' + suggestionsHtml + '</ul>' +
             '</div>' +
             '</div>';
+
+        // Render Chart.js chart
+        renderScoreChart(result);
+    }
+
+    // ── Chart.js Score Chart ───────────────────────────────
+    function renderScoreChart(result) {
+        const canvas = document.getElementById('seoScoreChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+        const ctx = canvas.getContext('2d');
+        if (seoChart) seoChart.destroy();
+        const labels = Object.keys(result.scores || {});
+        const data = Object.values(result.scores || {});
+        const colors = data.map(v => v >= 80 ? '#10b981' : v >= 50 ? '#f59e0b' : '#ef4444');
+        seoChart = new Chart(ctx, {
+            type:'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Score %',
+                    data: data,
+                    backgroundColor: colors,
+                    borderRadius: 6,
+                    barPercentage: 0.6,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { color: '#94a3b8' }, grid: { color: '#334155' } },
+                    x: { ticks: { color: '#94a3b8' }, grid: { display: false } }
+                }
+            }
+        });
     }
 
     // ── Render Generated Result ────────────────────────────
