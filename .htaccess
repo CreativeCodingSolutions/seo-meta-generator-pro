@@ -1,0 +1,59 @@
+# SEO Meta Generator Pro — Apache Security Configuration
+# Version 3.1.0
+
+# ── Security Headers ──────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# ── Disable Directory Listing ─────────────────────────────
+Options -Indexes
+
+# ── Protect Sensitive Files ───────────────────────────────
+<FilesMatch "\.(sqlite|log|ini|json|env|yml|yaml|toml)$">
+    Require all denied
+</FilesMatch>
+
+# ── Protect .git Directory ────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(\.git|\.env|composer\.) - [F,L]
+</IfModule>
+
+# ── CORS Preflight (API) ──────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^api/ - [R=204,L]
+</IfModule>
+
+# ── PHP Settings ──────────────────────────────────────────
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_value upload_max_filesize 2M
+    php_value post_max_size 2M
+    php_value max_execution_time 30
+    php_value session.cookie_httponly 1
+    php_value session.cookie_secure 1
+    php_value session.use_strict_mode 1
+</IfModule>
+
+# ── Cache Static Assets ───────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 3 months"
+    ExpiresByType image/png "access plus 3 months"
+    ExpiresByType image/svg+xml "access plus 3 months"
+</IfModule>
+
+# ── MIME Types ────────────────────────────────────────────
+AddType application/json .json
+AddType text/csv .csv

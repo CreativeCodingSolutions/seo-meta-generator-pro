@@ -1,0 +1,13 @@
+# SEO Meta Generator Pro — robots.txt
+# https://github.com/CreativeCodingSolutions/seo-meta-generator-pro
+
+User-agent: *
+Disallow: /data/
+Disallow: /includes/
+Disallow: /src/
+Disallow: /modules/
+Disallow: /templates/
+Disallow: /api/
+Disallow: /.git/
+
+Sitemap: https://example.com/sitemap.xml
