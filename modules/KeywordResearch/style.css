@@ -1,0 +1,97 @@
+/* Keyword Research Module Styles */
+.kw-research {
+    margin: 1.5rem 0;
+}
+.kw-research h3 {
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+    font-size: 1.1rem;
+}
+.kw-research h4 {
+    margin: 1.5rem 0 0.75rem;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+.kw-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.kw-stat {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #334155;
+}
+.kw-stat-val {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #818cf8;
+}
+.kw-stat-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+.kw-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+.kw-table th {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 2px solid #334155;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.kw-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #1e293b;
+}
+.kw-table tr:hover td {
+    background: #1e293b40;
+}
+.kw-density-bar {
+    color: #818cf8;
+    font-family: monospace;
+    letter-spacing: -1px;
+}
+.kw-bigrams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.kw-bigram {
+    background: #1e293b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid #334155;
+    color: #c7d2fe;
+}
+.kw-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 12px;
+}
+.kw-cloud-word {
+    color: #818cf8;
+    font-weight: 600;
+    cursor: default;
+    transition: all 0.2s;
+    display: inline-block;
+}
+.kw-cloud-word:hover {
+    color: #c7d2fe;
+    transform: scale(1.1);
+}

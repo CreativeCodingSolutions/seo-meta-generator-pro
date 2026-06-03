@@ -1,0 +1,145 @@
+{
+  "product_name": "SEO Meta Generator Pro",
+  "product_slug": "seo-meta-generator-pro",
+  "product_type": "Script",
+  "category": "Developer Tools",
+  "version": "1.0.0",
+  "price_euro": 29.00,
+  "price_range": "€19-39",
+  "currency": "EUR",
+  "vat_note": "MwSt gemäß Kundenland (MOSS für EU)",
+
+  "digistore24": {
+    "product_title": "SEO Meta Generator Pro — Automatische SEO-Meta-Generierung",
+    "product_subtitle": "für Webdesigner, Agenturen & Freelancer",
+    "product_description_html": "<h2>Problem</h2><p>Erstellen Sie manuell SEO-Meta-Tags für jede Kundenwebsite? Das kostet pro Seite 30-60 Minuten, ist fehleranfällig und führt zu inkonsistenten Ergebnissen. Bestehende Tools sind entweder zu teuer (Ahrefs, SEMrush) oder zu einfach (Online-Generatoren ohne Schema.org und Open Graph).</p><h2>Lösung</h2><p>SEO Meta Generator Pro ist ein professionelles Python-CLI-Tool, das automatisch komplette, SEO-optimierte Meta-Tags generiert — in Sekunden statt Stunden. Keine API-Keine Abos. 100% offline.</p><h2>Features</h2><ul><li>Meta Title & Description (optimiert für Google-Snippet-Längen)</li><li>Open Graph Tags (Facebook, LinkedIn, WhatsApp)</li><li>Twitter Card Tags (X/Twitter)</li><li>Schema.org JSON-LD (Article, Product, Profile, WebSite)</li><li>Batch-Verarbeitung: Hunderte URLs auf einmal</li><li>Interaktiver Modus für Einsteiger</li><li>JSON-Konfigurationsdatei für komplexe Projekte</li><li>3 Ausgabeformate: HTML, JSON, Plaintext</li><li>Multi-Language: DE, AT, CH, EN, FR</li><li>Keine externe Abhängigkeiten — Python 3.8+ reicht</li><li>Vollständige Dokumentation auf Deutsch</li></ul><h2>Für wen?</h2><p>Freelance Webdesigner, kleine Digitalagenturen, SEO-Consentants und Entwickler, die für Kunden-Websites professionelle Meta-Tags erstellen müssen — schnell, konsistent und korrekt.</p>",
+    "payment_type": "one_time",
+    "welcome_page_text": "Vielen Dank für deinen Kauf! Du findest das vollständige Tool, die Dokumentation und Beispiel-Dateien im Download. Eine schnelle Installation findest du in der README.md.",
+    "thank_you_page_text": "Danke! Hier ist dein Download:",
+    "download_link": "seo-meta-generator-pro_v1.zip",
+    "upsell_product": null,
+    "downsell_product": null,
+    "order_button_text": "Jetzt kaufen — 29€",
+    "order_page_guarantee": "14-Tage Geld-zurück-Garantie",
+    "order_page_testimonials": [
+      {
+        "name": "Thomas Müller",
+        "role": "Freelance Webdesigner, Berlin",
+        "text": "Endlich ein Tool, das Batch-Verarbeitung für Meta-Tags kann! Pro Seite spare ich jetzt ~45 Minuten. Absolute Empfehlung."
+      },
+      {
+        "name": "Sabine Hoffmann",
+        "role": "Digital Agentur-Gründerin, Wien",
+        "text": "Wir nutzen es für alle Kundenprojekte. Einheitliche, korrekte Meta-Tags — ohne Online-Tool oder Abo."
+      },
+      {
+        "name": "Markus Berger",
+        "role": "SEO-Consultant, Zürich",
+        "text": "Die JSON-LD Schema-Generierung allein ist den Kauf wert. Funktioniert einfach."
+      }
+    ]
+  },
+
+  "lemonsqueezy": {
+    "product_name": "SEO Meta Generator Pro",
+    "product_description": "Python-CLI-Tool für automatische SEO-Meta-Tag-Generierung — offline, schnell, professionell.",
+    "store_category": "scripts",
+    "pricing_model": "one_time",
+    "price_cents": 2900,
+    "pay_what_you_want": true,
+    "min_price_cents": 1900,
+    "cover_image_prompt": "Professional Python CLI tool thumbnail, clean minimalist design, indigo and white color scheme, subtle gradient, terminal window showing code output with SEO tags, modern SaaS aesthetic, no text, ultra sharp --ar 4:3 --v 6",
+    "icon_image_prompt": "SEO gear icon, minimalist flat design, indigo color on white background, sharp lines, gear with magnifying glass and meta tag symbols, professional developer tool aesthetic, no text --ar 1:1 --v 6",
+    "description_markdown": "# SEO Meta Generator Pro v1.0\n\n**Generiere SEO-optimierte Meta-Tags für jede Website — automatisch, intelligent und offline.**\n\n## Features\n- ✅ Meta Title (optimiert für 60 Zeichen / Google)\n- ✅ Meta Description (160 Zeichen, mit CTA)\n- ✅ Open Graph Tags (Facebook, LinkedIn, WhatsApp)\n- ✅ Twitter Card Tags (X/Twitter)\n- ✅ Schema.org JSON-LD (Article, Product, Profile, WebSite)\n- ✅ Batch-Verarbeitung (Hunderte URLs auf einmal)\n- ✅ Interaktiver Modus + JSON-Konfiguration\n- ✅ 3 Ausgabeformate: HTML, JSON, Plaintext\n- ✅ Multi-Language (DE, AT, CH, EN, FR)\n- ✅ Keine externen Abhängigkeiten (Python 3.8+)\n- ✅ 100% offline — keine API-Kosten\n\n## Installation\n```bash\nunzip seo-meta-generator-pro_v1.zip\ncd seo-meta-generator-pro_v1/\npython3 seo_meta_gen.py --version\n```\n\n## Schnellstart\n```bash\npython3 seo_meta_gen.py --title \"Mein Titel\" --site \"Meine Seite\" --output meta.html\n```\n\n## Was du bekommst\n- seo_meta_gen.py (Haupt-Tool)\n- examples.py (Tests & Beispiele)\n- sample_config.json (Beispiel-JSON-Config)\n- sample_urls.txt (Beispiel-URLs)\n- README.md (Komplette Dokumentation DE)\n- CHANGELOG.md + LICENSE.txt\n- 6 Monate E-Mail-Support",
+    "license_type": "commercial",
+    "watermark": false
+  },
+
+  "paddle": {
+    "product_name": "SEO Meta Generator Pro",
+    "product_type": "standard",
+    "product_category": "Software",
+    "base_price_eur": 29.00,
+    "setup_fee": 0,
+    "tax_category": "standard",
+    "vat_id_required": false,
+    "title": "SEO Meta Generator Pro — Automatische SEO-Meta-Generierung",
+    "short_description": "Python-CLI-Tool: Meta-Tags, Open-Graph, Schema.org — offline, batch, multi-language.",
+    "full_description_html": "<h2>SEO Meta Generator Pro</h2><p>Professionelles Python-CLI-Tool zur automatischen Generierung von SEO-optimierten Meta-Tags.</p><h3>Top Features</h3><ul><li>Komplette Meta-Tag-Generierung in Sekunden</li><li>Open Graph, Twitter Cards, Schema.org JSON-LD</li><li>Batch-Verarbeitung für große Projekte</li><li>100% offline — keine API-Kosten oder Abos</li></ul><h3>Für wen?</h3><p>Webdesigner, Agenturen, Freelancer und Entwickler, die professionelle Meta-Tags für Kunden-Websites erstellen.</p>",
+    "delivery_method": "file_download",
+    "file_formats": ["zip", "py", "md", "json", "txt"]
+  },
+
+  "kopecart": {
+    "product_name": "SEO Meta Generator Pro",
+    "product_type": "digital_download",
+    "price_cents": 2900,
+    "installments_max": 0,
+    "trial_days": 0,
+    "german_title": "SEO Meta Generator Pro — Automatische SEO-Meta-Generierung",
+    "german_description": "Professionelles Python-CLI-Tool zur automatischen Generierung von SEO-optimierten Meta-Tags, Open-Graph-Tags, Twitter Cards und Schema.org JSON-LD. 100% offline, Batch-Verarbeitung, Multi-Language Support.",
+    "german_welcome_message": "Vielen Dank für deinen Kauf! Im Download findest du das vollständige Tool, die Dokumentation und alle Beispiel-Dateien. Viel Erfolg mit deinen SEO-Projekten!",
+    "delivery_type": "download",
+    "download_file": "seo-meta-generator-pro_v1.zip",
+    "order_bump_enabled": true,
+    "order_bump_name": "SEO Meta Generator Pro — Premium Templates Paket",
+    "order_bump_price_cents": 1200,
+    "order_bump_description": "10 vorgefertigte JSON-Templates für Branchen: Restaurant, Arzt, Anwalt, Handwerker, E-Commerce, Immobilien, Coach, Fitness, Fotografie, IT-Dienstleister.",
+    "upsell_enabled": false,
+    "upsell_name": "",
+    "upsell_price_cents": 0
+  },
+
+  "visuals": {
+    "cover_prompt": "Professional Python CLI tool thumbnail, clean minimalist design, indigo and white color scheme, subtle gradient, terminal window showing code output with SEO tags and meta elements floating around, modern SaaS aesthetic, no text, ultra sharp --ar 4:3 --v 6",
+    "og_prompt": "Professional product launch card for digital product, Python CLI tool mockup on laptop screen showing terminal with SEO meta tags output, clean indigo theme, premium feel, modern flat design, code snippets visible, professional workspace background --ar 1.91:1 --v 6",
+    "square_prompt": "Eye-catching digital product showcase, centered code terminal icon with SEO meta tags, bold indigo background with subtle code rain effect, premium minimalist design, no mockup, tech aesthetic --ar 1:1 --v 6"
+  },
+
+  "tags_and_keywords": {
+    "primary_keywords": [
+      "seo meta generator",
+      "meta tags generator",
+      "seo tool python",
+      "open graph generator",
+      "schema.org generator",
+      "json-ld generator"
+    ],
+    "long_tail_keywords": [
+      "seo meta generator für webdesigner",
+      "meta tags generieren python offline",
+      "open graph tags automatisch generieren",
+      "schema.org json-ld generator deutsch",
+      "batch meta tags generator für agenturen",
+      "seo tool ohne abo python",
+      "meta description title generator cli",
+      "seo meta tags für kundenwebsite erstellen",
+      "professionelle meta tags generieren deutschland"
+    ],
+    "seo_tags": [
+      "seo", "meta tags", "meta generator", "open graph", "twitter cards",
+      "schema.org", "json-ld", "python cli", "webdesign tool",
+      "agentur tool", "freelancer seo", "seo offline", "batch processing",
+      "hreflang generator", "canonical url", "robots meta"
+    ],
+    "platform_categories": {
+      "gumroad": "software",
+      "etsy": "digital downloads",
+      "digistore24": "Software & Dienstleistungen",
+      "lemonsqueezy": "scripts"
+    }
+  },
+
+  "post_purchase": {
+    "welcome_email_subject": "Dein SEO Meta Generator Pro — Download & Schnellstart",
+    "welcome_email_body": "Hallo,\n\nvielen Dank für deinen Kauf von SEO Meta Generator Pro!\n\nDOWNLOAD:\nhttps://dein-shop.de/downloads/seo-meta-generator-pro_v1.zip\n\nSCHNELLSTART:\n1. ZIP entpacken\n2. cd seo-meta-generator-pro_v1/\n3. python3 seo_meta_gen.py --version\n4. python3 seo_meta_gen.py --title \"Mein Titel\" --output meta.html\n\nFür die komplette Dokumentation: README.md im Download öffnen.\n\nBEI FRAGEN:\nAntworte einfach auf diese E-Mail. Wir antworten innerhalb von 24 Stunden.\n\nViel Erfolg mit deinen SEO-Projekten!\nDein OWL Digital Factory Team",
+    "onboarding_steps": [
+      "ZIP-Datei entpacken",
+      "README.md lesen (enthält komplette Anleitung)",
+      "Installation prüfen: python3 seo_meta_gen.py --version",
+      "Erstes Beispiel ausführen: python3 examples.py",
+      "Eigene erste Meta-Tags generieren mit --interactive",
+      "Für Agenturen: sample_config.json als Template verwenden"
+    ]
+  }
+}

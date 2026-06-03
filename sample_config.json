@@ -1,0 +1,41 @@
+{
+  "pages": [
+    {
+      "title": "Homepage",
+      "url": "https://example.de",
+      "site_name": "Example GmbH",
+      "description_hint": "Willkommen bei Example GmbH — Ihr Partner für Digitales Marketing in Berlin.",
+      "keywords": ["digital marketing", "seo", "webdesign", "berlin"],
+      "type": "website",
+      "image_url": "https://example.de/og-image.jpg",
+      "org_name": "Example GmbH",
+      "org_logo": "https://example.de/logo.png",
+      "locale": "de_DE"
+    },
+    {
+      "title": "SEO-Beratung",
+      "url": "https://example.de/leistungen/seo-beratung",
+      "site_name": "Example GmbH",
+      "description_hint": "Professionelle SEO-Beratung für KMU. Mehr Sichtbarkeit, mehr Kunden, mehr Umsatz.",
+      "keywords": ["seo beratung", "suchmaschinenoptimierung", "google ranking"],
+      "type": "website",
+      "image_url": "https://example.de/og-seo.jpg",
+      "org_name": "Example GmbH",
+      "locale": "de_DE"
+    },
+    {
+      "title": "10 SEO-Tipps für 2025",
+      "url": "https://example.de/blog/seo-tipps-2025",
+      "site_name": "Example Blog",
+      "description_hint": "Die wichtigsten SEO-Strategien für 2025. Von Core Web Vitals bis KI-gestützter Content-Optimierung.",
+      "keywords": ["seo tipps", "seo 2025", "suchmaschinenoptimierung", "core web vitals"],
+      "type": "article",
+      "image_url": "https://example.de/blog/seo-tipps-og.jpg",
+      "author_name": "Max Mustermann",
+      "date_published": "2025-01-15T10:00:00+00:00",
+      "date_modified": "2025-01-20T14:30:00+00:00",
+      "org_name": "Example GmbH",
+      "locale": "de_DE"
+    }
+  ]
+}

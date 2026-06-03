@@ -1,0 +1,79 @@
+/* Social Preview Module Styles */
+.social-previews {
+    margin: 1.5rem 0;
+}
+.social-previews h3 {
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+    font-size: 1.1rem;
+}
+.social-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.sp-card {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.sp-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.sp-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+}
+.sp-icon { font-size: 1.2rem; }
+.sp-platform { font-weight: 600; color: #e2e8f0; flex: 1; }
+.sp-card-type { font-size: 0.75rem; color: #64748b; background: #1e293b; padding: 2px 8px; border-radius: 10px; }
+.sp-image {
+    width: 100%;
+    height: 160px;
+    background: #334155;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sp-no-image {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+.sp-image.sp-no-image span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sp-content {
+    padding: 1rem;
+}
+.sp-url {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+.sp-title {
+    font-weight: 600;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+.sp-description {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}

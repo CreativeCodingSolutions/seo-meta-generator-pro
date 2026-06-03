@@ -1,0 +1,11 @@
+# SEO Meta Generator Pro — Beispiel-URLs
+# Eine URL pro Zeile. Zeilen mit # werden ignoriert.
+#
+# Beispiel-Konfiguration für Batch-Verarbeitung:
+# python3 seo_meta_gen.py --batch sample_urls.txt --output-dir ./meta-output/
+
+https://example-praxis.de
+https://muster-kanzlei.at
+https://test-shop.ch
+https://webdesign-agentur.de
+https://online-marketing-freelancer.com

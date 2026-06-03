@@ -1,0 +1,117 @@
+═══════════════════════════════════════════════════════════
+SEO META GENERATOR PRO — Listing Informationen
+═══════════════════════════════════════════════════════════
+
+
+📌 SEO TITEL (für Produktseiten, max. 60 Zeichen)
+───────────────────────────────────────────────────
+Varianten:
+1. "SEO Meta Generator Pro — Automatisch Meta-Tags generieren"
+2. "SEO Meta Generator: Open-Graph, Schema.org, Twitter Cards"
+3. "SEO Tool: Meta-Tags für Agenturen & Webdesigner | Python CLI"
+
+
+📌 META DESCRIPTION (für Produktseiten, max. 160 Zeichen)
+───────────────────────────────────────────────────
+"Professionelles Python-CLI-Tool: Generiert automatisch SEO-optimierte Meta-Tags, Open-Graph, Twitter Cards & Schema.org JSON-LD. 100% offline. Keine Abos."
+
+
+📌 TAGS & KEYWORDS
+───────────────────────────────────────────────────
+Primary:
+  seo meta generator, meta tags generator, seo tool python,
+  open graph generator, schema.org generator, json-ld generator
+
+Long-Tail:
+  seo meta generator für webdesigner
+  meta tags generieren python offline
+  open graph tags automatisch generieren
+  schema.org json-ld generator deutsch
+  batch meta tags generator für agenturen
+  seo tool ohne abo python
+  meta description title generator cli
+  seo meta tags für kundenwebsite erstellen
+  professionelle meta tags generieren deutschland
+
+SEO Tags (allgemein):
+  seo, meta tags, meta generator, open graph, twitter cards,
+  schema.org, json-ld, python cli, webdesign tool,
+  agentur tool, freelancer seo, seo offline, batch processing,
+  hreflang generator, canonical url, robots meta
+
+
+📌 PLATTFORM-KATEGORIEN
+───────────────────────────────────────────────────
+  Gumroad:    "Software" / "Developer Tools"
+  Etsy:       "Digital Downloads > Software"
+  Digistore24: "Software & Dienstleistungen > Webdesign Tools"
+  LemonSqueezy: "Scripts & Tools"
+
+
+📌 MIDJOURNEY PROMPTS FÜR VISUALS
+───────────────────────────────────────────────────
+
+# Cover Image (Produkt-Kachel — 2700x2025px / 4:3)
+cover_prompt: >
+  Professional Python CLI tool thumbnail, clean minimalist design,
+  indigo and white color scheme, subtle gradient,
+  terminal window showing code output with SEO tags and meta elements floating around,
+  modern SaaS aesthetic, no text, ultra sharp --ar 4:3 --v 6
+
+# Social Media / OG Image (1200x630 / 1.91:1)
+og_prompt: >
+  Professional product launch card for digital product,
+  Python CLI tool mockup on laptop screen showing terminal with SEO meta tags output,
+  clean indigo theme, premium feel,
+  modern flat design, code snippets visible,
+  professional workspace background --ar 1.91:1 --v 6
+
+# Instagram / Pinterest Square (1080x1080 / 1:1)
+square_prompt: >
+  Eye-catching digital product showcase,
+  centered code terminal icon with SEO meta tags,
+  bold indigo background with subtle code rain effect,
+  premium minimalist design, no mockup, tech aesthetic --ar 1:1 --v 6
+
+# Banner (Gumroad / Landing Page — 1600x500 / 3.2:1)
+banner_prompt: >
+  Wide banner for digital product, minimalist indigo gradient background,
+  centered abstract SEO tag elements floating (meta, og, schema icons),
+  subtle grid pattern, premium SaaS aesthetic,
+  space for text overlay on the right --ar 3.2:1 --v 6
+
+
+📌 PREIS-EMPFEHLUNGEN
+───────────────────────────────────────────────────
+  Standard:    29.00 EUR
+  Sale:        19.00 EUR (35% Rabatt)
+  Premium+Templates: 41.00 EUR (Tool + 10 Branche-Templates)
+
+  Währung:     EUR
+  MwSt:        Automatisch über Plattform (MOSS für EU)
+
+
+📌 ZIELGRUPPEN-PERSONAS
+───────────────────────────────────────────────────
+  Persona 1: "Freelance Webdesigner"
+    - Altersgruppe: 25-45
+    - Standort: DE/AT/CH
+    - Schmerz: Manuell Meta-Tags für Kunden erstellen
+    - Lösung: Automatisierte Generierung mit Batch-Modus
+
+  Persona 2: "Kleine Digitalagentur"
+    - Größe: 2-10 Mitarbeiter
+    - Herausforderung: Konsistente SEO-Standards über Projekte hinweg
+    - Lösung: JSON-Templates & Batch-Verarbeitung
+
+  Persona 3: "SEO-Consultant"
+    - Anforderung: Schema.org JSON-LD, Open-Graph, Twitter Cards
+    - Lösung: Vollständige Schema-Generierung ohne Abo-Tool
+
+
+📌 WETTBEWERBS-VERGLEICH
+───────────────────────────────────────────────────
+  vs. Screaming Frog:    Günstiger, fokussiert auf Meta-Tags
+  vs. Yoast SEO:         Funktioniert offline, keine WordPress-Abhängigkeit
+  vs. Online-Generatoren: Batch-Möglichkeit, keine API-Kosten, Datenschutz
+  vs. Ahrefs/SEMRush:     Keine Meta-Generierung, nur Analyse (und 99€/Monat)

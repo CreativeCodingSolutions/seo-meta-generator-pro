@@ -1,0 +1,40 @@
+COMMERCIAL LICENSE AGREEMENT
+SEO Meta Generator Pro v1.0
+================================
+
+Copyright (c) 2026 OWL Digital Factory. All rights reserved.
+
+LICENSE GRANT:
+The purchaser of this digital product is granted a non-exclusive,
+non-transferable license to use the software for personal or commercial
+projects as defined below.
+
+PERMITTED USE:
+- Use the software in unlimited personal projects
+- Use the software in unlimited commercial projects
+- Modify the source code for your own purposes
+- Use the software for client projects (with restrictions below)
+
+RESTRICTIONS:
+- You may NOT resell, redistribute, or sublicense the software as-is
+- You may NOT include the software in a competing product or template
+  that is distributed for free or for sale
+- You may NOT claim authorship of the original code
+- You may NOT use the software in a product that directly competes
+  with SEO Meta Generator Pro
+
+CLIENT PROJECTS:
+You may use this software to generate meta tags for client websites.
+You may NOT provide the tool itself to clients as a standalone product.
+
+WARRANTY:
+This software is provided "as is" without warranty of any kind.
+The author is not liable for any damages arising from the use of
+this software.
+
+Support: 6 months email support included with purchase.
+
+For license inquiries, contact: support@owl-digital-factory.example
+
+—
+End of License Agreement
