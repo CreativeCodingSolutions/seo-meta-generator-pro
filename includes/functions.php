@@ -490,3 +490,56 @@ function generateContentRecommendations(array $analysis): array
 
     return $recommendations;
 }
+
+// ── Schema Markup Helper (stub — full implementation in api/schema-markup.php) ──
+
+if (!function_exists('generateSchemaMarkup')) {
+    /**
+     * Generate a simplified Schema.org JSON-LD markup array.
+     *
+     * For full generation with all types, use the api/schema-markup.php endpoint.
+     *
+     * @param string $type Schema type (e.g. 'Article', 'Product', 'FAQPage')
+     * @param array  $data Type-specific data fields
+     * @return array JSON-LD schema array
+     */
+    function generateSchemaMarkup(string $type, array $data): array
+    {
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@type'    => $type,
+        ];
+
+        // Basic sanitization for common fields
+        if (isset($data['name'])) {
+            $schema['name'] = htmlspecialchars(trim($data['name']), ENT_QUOTES, 'UTF-8');
+        }
+        if (isset($data['headline'])) {
+            $schema['headline'] = htmlspecialchars(trim($data['headline']), ENT_QUOTES, 'UTF-8');
+        }
+        if (isset($data['description'])) {
+            $schema['description'] = htmlspecialchars(trim($data['description']), ENT_QUOTES, 'UTF-8');
+        }
+        if (isset($data['url'])) {
+            $schema['url'] = filter_var($data['url'], FILTER_VALIDATE_URL) ?: '';
+        }
+        if (isset($data['image'])) {
+            $schema['image'] = $data['image'];
+        }
+        if (isset($data['date'])) {
+            $schema['datePublished'] = $data['date'];
+        }
+        if (isset($data['datePublished'])) {
+            $schema['datePublished'] = $data['datePublished'];
+        }
+
+        // Merge any remaining string/scalar data
+        foreach ($data as $key => $value) {
+            if (!isset($schema[$key]) && is_scalar($value)) {
+                $schema[$key] = is_string($value) ? htmlspecialchars(trim($value), ENT_QUOTES, 'UTF-8') : $value;
+            }
+        }
+
+        return $schema;
+    }
+}

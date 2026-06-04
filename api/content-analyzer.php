@@ -22,8 +22,6 @@
 
 require_once __DIR__ . '/../includes/functions.php';
 
-use SEOMetaGen\Analyzer;
-
 // ── Headers & CORS ─────────────────────────────────────────────
 applySecurityHeaders('POST, OPTIONS');
 handleOptionsRequest();

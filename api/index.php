@@ -125,6 +125,11 @@ try {
             echo $exporter->exportJson($result);
             break;
 
+        case 'schema_markup':
+        case 'schema-markup':
+            require_once __DIR__ . '/schema-markup.php';
+            break;
+
         case 'version':
             echo json_encode([
                 'success' => true,
@@ -136,7 +141,7 @@ try {
         default:
             echo json_encode([
                 'success' => false,
-                'error' => 'Unknown action. Available: analyze, analyze_meta, generate, bulk, compare, keywords, export_html, export_json, version',
+                'error' => 'Unknown action. Available: analyze, analyze_meta, generate, bulk, compare, keywords, export_html, export_json, schema-markup, version',
             ], JSON_PRETTY_PRINT);
     }
 } catch (\Exception $e) {
