@@ -23,6 +23,7 @@ header('X-XSS-Protection: 1; mode=block');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('X-RateLimit-Limit: 100');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -174,6 +175,7 @@ if ($method === 'POST' && isset($_SERVER['HTTP_X_HTTP_METHOD_OVERRIDE'])) {
     }
 }
 
+try {
 switch ($method) {
 
     // ── READ (List / Single) ───────────────────────────────────
@@ -437,4 +439,13 @@ switch ($method) {
         ], JSON_PRETTY_PRINT);
         exit;
     }
+}
+} catch (\Exception $e) {
+    http_response_code(500);
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'success' => false,
+        'error'   => 'Internal error: ' . $e->getMessage(),
+    ], JSON_PRETTY_PRINT);
+    exit;
 }

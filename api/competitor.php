@@ -26,6 +26,7 @@ header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header('X-XSS-Protection: 1; mode=block');
 header('Referrer-Policy: strict-origin-when-cross-origin');
+header('X-RateLimit-Limit: 100');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -66,6 +67,7 @@ $generator = new Generator();
 $results = [];
 $errors = [];
 
+try {
 foreach ($urls as $i => $url) {
     // Validate URL
     $url = filter_var($url, FILTER_VALIDATE_URL);
@@ -97,6 +99,14 @@ foreach ($urls as $i => $url) {
     } catch (\Exception $e) {
         $errors[] = "Failed to analyze $url: " . substr($e->getMessage(), 0, 100);
     }
+}
+} catch (\Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'error' => 'Analysis failed: ' . $e->getMessage(),
+    ], JSON_PRETTY_PRINT);
+    exit;
 }
 
 if (empty($results)) {

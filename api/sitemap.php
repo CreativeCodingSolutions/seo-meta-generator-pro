@@ -24,6 +24,7 @@ header('X-XSS-Protection: 1; mode=block');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('X-RateLimit-Limit: 100');
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -92,6 +93,7 @@ if ($method !== 'POST') {
     exit;
 }
 
+try {
 $input = json_decode(file_get_contents('php://input'), true);
 if (!$input) {
     $input = $_POST;
@@ -263,3 +265,12 @@ echo json_encode([
     ],
     'invalid_urls' => $invalidUrls ?: null,
 ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+} catch (\Exception $e) {
+    http_response_code(500);
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'success' => false,
+        'error'   => 'Sitemap generation failed: ' . $e->getMessage(),
+    ], JSON_PRETTY_PRINT);
+    exit;
+}

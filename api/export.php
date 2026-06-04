@@ -24,10 +24,17 @@ use SEOMetaGen\Modules\History\History;
 // ── Security Headers ──────────────────────────────────────────
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header('X-XSS-Protection: 1; mode=block');
 header('Referrer-Policy: strict-origin-when-cross-origin');
+header('X-RateLimit-Limit: 100');
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
 
 // ── Input Sanitisation ────────────────────────────────────────
 $format = strtolower(trim($_GET['format'] ?? $_POST['format'] ?? ''));
@@ -45,22 +52,32 @@ if (!$format) {
 $exporter = new Exporter();
 $history  = new History();
 
-// ── Export from history (database) ────────────────────────────
-if ($format === 'json') {
-    header('Content-Type: application/json; charset=utf-8');
-    $entries = $history->getRecent(500);
-    echo json_encode([
-        'success'     => true,
-        'exported_at' => date('Y-m-d H:i:s'),
-        'total'       => count($entries),
-        'data'        => $entries,
-    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    exit;
-}
+try {
+    // ── Export from history (database) ────────────────────────────
+    if ($format === 'json') {
+        header('Content-Type: application/json; charset=utf-8');
+        $entries = $history->getRecent(500);
+        echo json_encode([
+            'success'     => true,
+            'exported_at' => date('Y-m-d H:i:s'),
+            'total'       => count($entries),
+            'data'        => $entries,
+        ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit;
+    }
 
-if ($format === 'csv') {
-    header('Content-Type: text/csv; charset=utf-8');
-    header('Content-Disposition: attachment; filename="seo-history-export-' . date('Y-m-d-His') . '.csv"');
-    echo $history->exportCsv(500);
+    if ($format === 'csv') {
+        header('Content-Type: text/csv; charset=utf-8');
+        header('Content-Disposition: attachment; filename="seo-history-export-' . date('Y-m-d-His') . '.csv"');
+        echo $history->exportCsv(500);
+        exit;
+    }
+} catch (\Exception $e) {
+    http_response_code(500);
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'success' => false,
+        'error'   => 'Export failed: ' . $e->getMessage(),
+    ], JSON_PRETTY_PRINT);
     exit;
 }
